@@ -26,4 +26,4 @@ for file in os.listdir("./logs"):
             bot.load_extension(f"logs.{file[:-3]}")
         except Exception as e: print(f"Error: {e}")
 
-bot.run(str(token))
+bot.run(process.env.TOKEN)

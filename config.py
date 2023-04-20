@@ -1,5 +1,3 @@
-key = 'MTA5NTQwODU0NDI1OTUyMjY2MA.Gte3uC.H8WxHZMd-NNoRGcAUxTd6IienrrSHSVQ4BvXjg'
-
 bot_prefix = '/'
 bot_login = 'AngeLina'
 bot_pref = 6635
