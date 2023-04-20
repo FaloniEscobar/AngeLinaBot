@@ -3,7 +3,7 @@ import discord
 from discord.ext import commands
 import os
 
-import keep_alive as keep_alive
+import keep_alive.py
 
 import config as config
 token = config.key
