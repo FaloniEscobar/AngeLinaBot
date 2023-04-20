@@ -1,12 +1,12 @@
-import discord
-from discord.ext import commands
+import disnake
+from disnake.ext import commands
 import os
 import asyncio
 import datetime
 import config
 import chi
 
-intents = discord.Intents.all()
+intents = disnake.Intents.all()
 
 class logMessages(commands.Cog):
     def __init__(self, bot):
@@ -21,7 +21,7 @@ class logMessages(commands.Cog):
         userID = after.author.id
         time = datetime.datetime.now()
 
-        embed = discord.Embed(
+        embed = disnake.Embed(
             title = "Сообщение изменено",
             color = 0xff4545,
             timestamp = time
@@ -60,7 +60,7 @@ class logMessages(commands.Cog):
         userID = message.author.id
         time = datetime.datetime.now()
 
-        embed = discord.Embed(
+        embed = disnake.Embed(
             title = "Сообщение удалено",
             color = 0xff4545,
             timestamp = time

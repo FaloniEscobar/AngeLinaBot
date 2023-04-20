@@ -1,6 +1,6 @@
 import asyncio
-import discord
-from discord.ext import commands
+import disnake
+from disnake.ext import commands
 import os
 
 import keep_alive.py
@@ -9,7 +9,7 @@ import config as config
 token = config.key
 prefix = config.bot_prefix
 
-bot = commands.Bot(intents=discord.Intents.all(), command_prefix=prefix, test_guilds=[1095398284845137920], help_command=None)
+bot = commands.Bot(intents=disnake.Intents.all(), command_prefix=prefix, test_guilds=[1095398284845137920], help_command=None)
 # intents.message_content = True
 
 @bot.event
