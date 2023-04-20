@@ -3,6 +3,8 @@ import disnake
 from disnake.ext import commands
 import os
 
+import keep_alive as keep_alive
+
 import config as config
 token = config.key
 prefix = config.bot_prefix
@@ -26,4 +28,6 @@ for file in os.listdir("./logs"):
             bot.load_extension(f"logs.{file[:-3]}")
         except Exception as e: print(f"Error: {e}")
 
-bot.run(process.env.TOKEN)
+keep_alive.keep_alive()
+
+bot.run(os.environ.get('key'), bot=True, reconnect=True)
